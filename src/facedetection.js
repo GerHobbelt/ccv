@@ -15,9 +15,9 @@
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-define("facedetection",["facedetection/ccv","facedetection/face"],function(ccv,cascade) {
+define("facedetection", ["ccv/ccv", "ccv/face"], function(ccv, cascade) {
 
-	function facedetection(target,settings) {
+	function facedetection(target, settings) {
 
 		var options = {
 			confidence : null,
@@ -29,12 +29,13 @@ define("facedetection",["facedetection/ccv","facedetection/face"],function(ccv,c
 			}
 		}
 
-		for(var i in settings)
+		for (var i in settings) {
 			options[i] = settings[i];
+		}
 
 		options.start(target);
 
-		if (!elt.nodeName == "img") {
+		if (target.nodeName.toLowerCase() !== "img") {
 			options.error(target, 1, 'This is not an image.');
 			options.complete(target, []);
 			return [];
@@ -94,7 +95,7 @@ define("facedetection",["facedetection/ccv","facedetection/face"],function(ccv,c
 
 		return coords;
 	};
-	
+
 	return facedetection;
 
 });

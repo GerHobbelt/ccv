@@ -1,0 +1,36 @@
+html, body {
+	background-color: #121212;
+}
+#image_area {
+	width: 640px;
+	min-height: 480px;
+	margin: 0 auto;
+	background-color: #0a0;
+	color: #060;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+#image_area img {
+	display: block;
+}
+#controls {
+	width: 640px;
+	margin: 0 auto;
+	background-color: #000;
+}
+button {border-radius: 0; border: 0; padding: 20px; color: white; display: inline-block; float: left; width: 20%; margin-left: 10%;}
+
+#button_detect {background-color: #a00;}
+#button_reset {background-color: #aa0;}
+
+#button_detect:hover {background-color: #f00;}
+#button_reset:hover {background-color: #ff0;}
+
+.face {
+	position: absolute;
+	background-color: rgba(255,0,0,.5);
+	border-radius: 100%;
+}
+
+.clear {clear: both;}

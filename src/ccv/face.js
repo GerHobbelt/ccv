@@ -1,4 +1,4 @@
-define("facedetection/face", [], function() {
+define("ccv/face", [], function() {
 	return {
 		"count" : 16,
 		"width" : 24,

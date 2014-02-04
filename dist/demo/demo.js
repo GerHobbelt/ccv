@@ -11,6 +11,8 @@ define("demo",["facedetection"],function(detect){
 
 	function showImage() {
 
+		container.innerHTML = "";
+
 		var i = document.createElement("img"); // <img id="test_image" src="img/lincoln.jpg" width="640" height="480" />
 			i.src = "img/" + images[ Math.floor( images.length * Math.random() ) ];
 			i.id = "test_image";
@@ -20,6 +22,9 @@ define("demo",["facedetection"],function(detect){
 	}
 
 	document.getElementById("button_detect").onclick = function() {
+
+ 		var start = new Date().getTime();
+
 		var results = detect( document.getElementById("test_image"), {
 			start : function(img) {
 			},
@@ -28,8 +33,11 @@ define("demo",["facedetection"],function(detect){
 			error : function(img, code, message) {
 			}
 		});
-		console.log( results );
 		
+		var duration = (new Date().getTime() - start) / 1000;
+
+		console.log( duration + " seconds to complete");
+
 		for(var i = 0; i < results.length; i++) {
 
 			var current = results[i];

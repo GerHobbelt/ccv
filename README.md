@@ -1,17 +1,25 @@
 Face detection AMD library
 ============================
 
-Based on the work of (Jay Salvat)[http://facedetection.jaysalvat.com/].
-This library uses an algorithm by Liu Liu.
+Based on the work of [Jay Salvat](http://facedetection.jaysalvat.com/).
+This library uses an algorithm by [Liu Liu](https://github.com/liuliu/ccv).
 
-(Download release build)[https://github.com/sprky0/facedetection/blob/master/dist/facedetection.js]
+[Download release build](https://github.com/sprky0/facedetection/blob/master/dist/facedetection.js)
 
-Usage
+Basic Usage
 --------
-var results = facedetection(image, {options})
+
+	require.config({paths:{facedetection:"libraries/facedetection.js"});
+
+	require("facedetection",function(){
+		var	image = document.getElementById("image_id");
+		var results = facedetection(image);
+	});
 
 Settings
 --------
+
+Settings can be passed as a second parameter to the face detection function.
 
 **confidence:** Minimum level of confidence
 

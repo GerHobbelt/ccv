@@ -2,7 +2,7 @@
  FaceDetection AMD
  Ported from jquery facetection plugin by Jay Salvat
  Copyright (c) 2010, Jay Salvat
- Ported to AMD 2013 by sprky0
+ AMD Port (c) 2013 by sprky0
 
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE

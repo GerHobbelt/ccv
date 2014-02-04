@@ -1,58 +1,14 @@
-
-Face detection jquery plugin
+Face detection AMD library
 ============================
 
-A jQuery plugin which detects faces in pictures and returns theirs coords.
-This plugin uses an algorithm by Liu Liu.
+Based on the work of (Jay Salvat)[http://facedetection.jaysalvat.com/].
+This library uses an algorithm by Liu Liu.
 
-Demo here:
-[http://facedetection.jaysalvat.com/](http://facedetection.jaysalvat.com/)
+(Download release build)[https://github.com/sprky0/facedetection/blob/master/dist/facedetection.js]
 
-Html & Scripts
---------------
-
-**Includes**
-
-	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script> 
-	<script src="js/facedetection/ccv.js"></script> 
-	<script src="js/facedetection/face.js"></script>
-	<script src="js/jquery.facedetection.js"></script> 
-
-**Image**
-
-	<img id="myPicture" src="img/face.jpg">
-
-**Script**
-
-	<script>
-		$(function() {
-   			var coords = $('#myPicture').faceDetection();
-			console.log(coords);    
-		});
-	</script> 
-
-Results
--------
-
-Returns an array with found faces object:
-
-**x:** Y coord of the face
-
-**y:** Y coord of the face
-
-**width:** Width of the face
-
-**height:** Height of the face
-
-**positionX:** X position relative to the document
-
-**positionY:** Y position relative to the document
-
-**offsetX:** X position relative to the offset parent
-
-**offsetY:** Y position relative to the offset parent
-
-**confidence:** Level of confidence
+Usage
+--------
+var results = facedetection(image, {options})
 
 Settings
 --------
@@ -76,3 +32,18 @@ Settings
 	error:function(img, code, message) {
 		// ...
 	}
+
+Results
+-------
+
+Returns an array with found faces object:
+
+**x:** Y coord of the face
+
+**y:** Y coord of the face
+
+**width:** Width of the face
+
+**height:** Height of the face
+
+**confidence:** Level of confidence

@@ -25,6 +25,8 @@
 		"bower_components",
 		"test",
 		"tests",
-		"build"
+		"build",
+		".gitignore",
+		"package.json"
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"name": "facedetection",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"homepage": "https://github.com/sprky0/facedetection",
 	"authors": [
 		"sprky0 <avery@averyisgreat.com>",
@@ -17,7 +17,7 @@
 		"html5"
 	],
 	"license": "MIT",
-	"private": true,
+	"private": false,
 	"ignore": [
 		"Gruntfile.js",
 		"**/.*",

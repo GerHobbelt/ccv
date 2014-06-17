@@ -9,7 +9,11 @@ Basic Usage
 --------
 
 ```javascript
-require.config({paths:{facedetection:"libraries/facedetection.js"});
+require.config({
+	paths:{
+		facedetection:"libraries/facedetection.js"
+	}
+});
 
 require("facedetection",function(){
 	var	image = document.getElementById("image_id");

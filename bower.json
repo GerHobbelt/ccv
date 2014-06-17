@@ -8,7 +8,7 @@
 		"Jay Salvat <jay@jaysalvat.com>"
 	],
 	"description": "AMD / require.js module port of Liu Liu's CCV face detection.",
-	"main": "dist/facedetection.min.js",
+	"main": "dist/facedetection.js",
 	"keywords": [
 		"facedetection",
 		"imaging",

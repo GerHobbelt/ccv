@@ -1,10 +1,9 @@
 Face detection AMD library
 ============================
 
-Based on the work of [Jay Salvat](http://facedetection.jaysalvat.com/).
-This library uses an algorithm by [Liu Liu](https://github.com/liuliu/ccv).
+Based on the work of [Jay Salvat](http://facedetection.jaysalvat.com/) and [Liu Liu](https://github.com/liuliu/ccv).
 
-[Download release build](https://github.com/sprky0/facedetection/blob/master/dist/facedetection.js)
+[Download release build](https://github.com/sprky0/facedetection/raw/master/dist/facedetection.js)
 
 Basic Usage
 --------

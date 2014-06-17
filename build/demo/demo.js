@@ -1,6 +1,6 @@
 require.config({
 	paths : {
-		"facedetection" : "../facedetection"
+		"facedetection" : "dist/facedetection"
 	}
 });
 
@@ -33,7 +33,7 @@ define("demo",["facedetection"],function(detect){
 			error : function(img, code, message) {
 			}
 		});
-		
+
 		var duration = (new Date().getTime() - start) / 1000;
 
 		console.log( duration + " seconds to complete");

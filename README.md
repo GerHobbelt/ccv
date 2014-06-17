@@ -3,17 +3,19 @@ Face detection AMD library
 
 Based on the work of [Jay Salvat](http://facedetection.jaysalvat.com/) and [Liu Liu](https://github.com/liuliu/ccv).
 
-[Download release build](https://github.com/sprky0/facedetection/raw/master/dist/facedetection.js)
+[Download latest build](https://github.com/sprky0/facedetection/raw/master/dist/facedetection.js)
 
 Basic Usage
 --------
 
-	require.config({paths:{facedetection:"libraries/facedetection.js"});
+```javascript
+require.config({paths:{facedetection:"libraries/facedetection.js"});
 
-	require("facedetection",function(){
-		var	image = document.getElementById("image_id");
-		var results = facedetection(image);
-	});
+require("facedetection",function(){
+	var	image = document.getElementById("image_id");
+	var results = facedetection(image);
+});
+```
 
 Settings
 --------
@@ -22,7 +24,7 @@ Settings can be passed as a second parameter to the face detection function.
 
 **confidence:** Minimum level of confidence
 
-**start:** Callback function trigged just before the process starts. **DOES'NT WORK PROPERLY**
+**start:** Callback function trigged just before the process starts. **DOESN'T WORK PROPERLY**
 
 	start:function(img) {
 		// ...
@@ -54,3 +56,8 @@ Returns an array with found faces object:
 **height:** Height of the face
 
 **confidence:** Level of confidence
+
+Version History
+-------
+
+* 0.2.0 - Prepared for release as a Bower package.
